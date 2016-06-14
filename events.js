@@ -28,7 +28,7 @@ function one () {
 // CREATE FUNCTION two HERE
 function two () {
   var two = document.getElementById('two')
-  two.addEventListener('mouseenter', makeBlue)
+  two.addEventListener('mouseenter', makeGreen)
   two.addEventListener('mouseleave', makeWhite)
 }
 
@@ -41,7 +41,7 @@ function three () {
 // CREATE FUNCTION four HERE
 function four () {
   var four = document.getElementById('four')
-  four.addEventListener('mouseenter', makeGreen)
+  four.addEventListener('blur', makeBrown)
   four.addEventListener('mouseleave', makeWhite)
 }
 // Changes the background color of event's target
@@ -53,6 +53,9 @@ function makeTeal (evt) {
 }
 function makeGreen (evt) {
   evt.target.style.backgroundColor = 'green'
+}
+function makeBrown (evt) {
+  evt.target.style.backgroundColor = 'brown'
 }
 function makeWhite (evt) {
   evt.target.style.backgroundColor = 'white'
